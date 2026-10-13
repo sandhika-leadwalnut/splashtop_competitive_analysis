@@ -23,6 +23,7 @@ const VENDORS = [
 ];
 
 // Oct 2025 → Jun 2026 (9 months)
+<<<<<<< HEAD
 const MONTHS_DISPLAY = ['Jul-25', 'Aug-25', 'Sep-25', 'Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26', 'Jul-26', 'Aug-26', 'Sep-26'];
 const MONTH_KEYS     = ['2025-07', '2025-08', '2025-09', '2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09'];
 
@@ -30,35 +31,68 @@ const formatMonth = (key: string) => {
   const map: Record<string,string> = {
     '2025-07':'Jul-25','2025-08':'Aug-25','2025-09':'Sep-25','2025-10':'Oct-25','2025-11':'Nov-25','2025-12':'Dec-25',
     '2026-01':'Jan-26','2026-02':'Feb-26','2026-03':'Mar-26','2026-04':'Apr-26','2026-05':'May-26','2026-06':'Jun-26','2026-07':'Jul-26','2026-08':'Aug-26','2026-09':'Sep-26',
+=======
+const MONTHS_DISPLAY = ['Oct-25', 'Nov-25', 'Dec-25', 'Jan-26', 'Feb-26', 'Mar-26', 'Apr-26', 'May-26', 'Jun-26'];
+const MONTH_KEYS     = ['2025-10',  '2025-11',  '2025-12',  '2026-01',  '2026-02',  '2026-03',  '2026-04',  '2026-05',  '2026-06',  '2026-07'];
+
+const formatMonth = (key: string) => {
+  const map: Record<string,string> = {
+    '2025-10':'Oct-25','2025-11':'Nov-25','2025-12':'Dec-25',
+    '2026-01':'Jan-26','2026-02':'Feb-26','2026-03':'Mar-26','2026-04':'Apr-26','2026-05':'May-26','2026-06':'Jun-26','2026-07':'Jul-26',
+>>>>>>> origin/main
   };
   return map[key] ?? key;
 };
 
 // ── AI Keywords (total AI keyword count) ─────────────────────────────────────
 const AI_KEYWORDS_INIT = {
+<<<<<<< HEAD
   splashtop:   [1320, 1209, 1140, 1117, 1193, 1483, 1764, 1972, 2403, 2409, 2076, 2468, 2837, 2753, 3053],
   teamviewer:  [1667, 1493, 1504, 1480, 1490, 1580, 1787, 1880, 2715, 3383, 3590, 4635, 6465, 7328, 7602],
   anydesk:     [ 500,  433,  409,  422,  370,  403,  519,  559,  725,  958,  937,  900, 1189, 1454, 1708],
   beyondtrust: [ 544,  525,  510,  515,  516,  603,  744,  747,  901, 1236, 1342, 1301, 1301, 1340, 1528],
   gotomypc:    [  89,   53,   40,   36,   38,   39,   36,   27,   35,   44,   25,   39,   73,  119,  167],
+=======
+  splashtop:   [1117, 1193, 1483, 1764, 1972, 2403, 2409, 2076, 2468, 2837],
+  teamviewer:  [1480, 1490, 1580, 1787, 1880, 2715, 3383, 3590, 4635, 6465],
+  anydesk:     [ 422,  370,  403,  519,  559,  725,  958,  937,  900, 1189],
+  beyondtrust: [ 515,  516,  603,  744,  747,  901, 1236, 1342, 1301, 1301],
+  gotomypc:    [  36,   38,   39,   36,   27,   35,   44,   25,   39,   73],
+>>>>>>> origin/main
 };
 
 // ── Branded AI keywords ───────────────────────────────────────────────────────
 const BRANDED_INIT = {
+<<<<<<< HEAD
   splashtop:   [  75,  119,   99,   85,  101,  109,  142,  149,  196,  253,  268,  315,  492,  674,  869],
   teamviewer:  [ 700,  699,  716,  685,  678,  615,  733,  694,  730,  981, 1160, 1139, 1453, 1736, 2392],
   anydesk:     [ 243,  228,  232,  227,  208,  194,  231,  241,  244,  318,  319,  378,  604,  812, 1060],
   beyondtrust: [  86,   89,   96,  108,   89,   89,  123,  114,  154,  201,  196,  228,  246,  273,  392],
   gotomypc:    [   3,   14,   14,    8,    7,    6,   14,   10,    6,    8,    6,    8,   24,   60,  103],
+=======
+  splashtop:   [  85,  101,  109,  142,  149,  196,  253,  268,  315,  492],
+  teamviewer:  [ 685,  678,  655,  701,  694,  730,  981, 1160, 1139, 1453],
+  anydesk:     [ 227,  208,  194,  231,  241,  244,  318,  319,  378,  604],
+  beyondtrust: [ 108,   89,   89,  123,  114,  154,  201,  196,  228,  246],
+  gotomypc:    [   8,    7,    6,   14,   10,    6,    8,    6,    8,   24],
+>>>>>>> origin/main
 };
 
 // ── Non-Branded AI keywords ───────────────────────────────────────────────────
 const NON_BRANDED_INIT = {
+<<<<<<< HEAD
   splashtop:   [1245, 1090, 1041, 1032, 1092, 1374, 1622, 1823, 2207, 2156, 1808, 2153, 2345, 2079, 2184],
   teamviewer:  [ 967,  794,  788,  795,  812,  965, 1054, 1186, 1985, 2402, 2430, 3496, 5012, 5592, 5210],
   anydesk:     [ 257,  205,  177,  195,  162,  209,  288,  318,  481,  640,  618,  522,  585,  642,  648],
   beyondtrust: [ 458,  436,  414,  407,  427,  514,  621,  633,  747, 1035, 1146, 1073, 1055, 1067, 1136],
   gotomypc:    [  86,   39,   26,   28,   31,   33,   22,   17,   29,   36,   19,   31,   49,   59,   64],
+=======
+  splashtop:   [1032, 1092, 1374, 1622, 1823, 2207, 2156, 1808, 2153, 2345],
+  teamviewer:  [ 795,  812,  965, 1054, 1186, 1985, 2402, 2430, 3496, 5012],
+  anydesk:     [ 195,  162,  209,  288,  318,  481,  640,  618,  522,  585],
+  beyondtrust: [ 407,  427,  514,  621,  633,  747, 1035, 1146, 1073, 1055],
+  gotomypc:    [  28,   31,   33,   22,   17,   29,   36,   19,   31,   49],
+>>>>>>> origin/main
 };
 
 type TabType = 'aiKeywords' | 'branded' | 'nonBranded';
@@ -132,25 +166,44 @@ export function SlideProfundMetrics({ onNavigateHome }: { onNavigateHome?: () =>
     }
   };
 
+<<<<<<< HEAD
   const latestIdx = 14; // Sep 2026
+=======
+  const latestIdx = 9; // Jul 2026
+>>>>>>> origin/main
 
   const getInsights = () => {
     if (activeTab === 'aiKeywords') return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Jul 2025 to Sep 2026, AI keywords grew <strong>1,320 → 3,053 (+131.3%)</strong>, strong expansion in AI visibility.</>} />
         <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>1,667 → 7,602 (+355.9%)</strong>, while AnyDesk increased <strong>500 → 1,708 (+241.6%)</strong>.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Oct 2025 to Jul 2026, AI keywords grew <strong>1,117 → 2,837 (+154%)</strong>, strong expansion in AI visibility.</>} />
+        <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>1,480 → 6,465 (+336.8%)</strong>, while AnyDesk increased <strong>422 → 1,189 (+181.8%)</strong>.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
     if (activeTab === 'branded') return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Jul 2025 to Sep 2026, branded AI keywords grew <strong>75 → 869 (+1,058.7%)</strong>, strongest branded growth in the set.</>} />
         <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer leads branded at <strong>700 → 2,392 (+241.7%)</strong>, while AnyDesk grew <strong>243 → 1,060 (+336.2%)</strong>.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Oct 2025 to Jul 2026, branded AI keywords grew <strong>85 → 492 (+478.8%)</strong>, strongest branded growth in the set.</>} />
+        <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer leads branded at <strong>685 → 1,453 (+112.1%)</strong>, while AnyDesk grew <strong>227 → 604 (+166.1%)</strong>.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
     return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Jul 2025 to Sep 2026, non-branded AI keywords grew <strong>1,245 → 2,184 (+75.4%)</strong>, discovery-led growth.</>} />
         <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>967 → 5,210 (+438.8%)</strong>, while BeyondTrust grew <strong>458 → 1,136 (+148.0%)</strong>.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Oct 2025 to Jul 2026, non-branded AI keywords grew <strong>1,032 → 2,345 (+127.2%)</strong>, discovery-led growth.</>} />
+        <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>795 → 5,012 (+530.4%)</strong>, while BeyondTrust held at <strong>407 → 1,055 (+159.2%)</strong>.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
   };
@@ -161,11 +214,19 @@ export function SlideProfundMetrics({ onNavigateHome }: { onNavigateHome?: () =>
     { id: 'nonBranded' as TabType, label: 'Non Branded' },
   ];
 
+<<<<<<< HEAD
   const editMonths = ['Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'];
 
   return (
     <SlideContainer slideNumber={14} onNavigateHome={onNavigateHome} source="SEMrush">
       <SlideHeader title="AI Overview Keywords" subtitle="(Jul 2025 - Sep 2026)" />
+=======
+  const editMonths = ['Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul'];
+
+  return (
+    <SlideContainer slideNumber={14} onNavigateHome={onNavigateHome} source="SEMrush">
+      <SlideHeader title="AI Overview Keywords" subtitle="(Oct 2025 - Jul 2026)" />
+>>>>>>> origin/main
 
       {!isEditing ? (
         <div className="flex-1 flex flex-col gap-6">

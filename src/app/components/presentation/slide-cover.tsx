@@ -24,7 +24,11 @@ export function SlideCover({ onNavigateHome }: SlideCoverProps) {
               SEO &amp; AI VISIBILITY
             </div>
             <h1 className="text-[44px] font-bold text-black leading-tight tracking-tight mb-4 uppercase">
+<<<<<<< HEAD
               Competitive Analysis - Sep 2026
+=======
+              Competitive Analysis - July 2026
+>>>>>>> origin/main
             </h1>
           </div>
 

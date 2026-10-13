@@ -37,9 +37,15 @@ const WW_COMPETITORS = [
 ];
 
 // ─────────────────────────────────────────────────────────────
+<<<<<<< HEAD
 // Months  Oct 2025 → Aug 2026  (11 data points)
 // ─────────────────────────────────────────────────────────────
 const WW_MONTHS = ['2025-07', '2025-08', '2025-09', '2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09'];
+=======
+// Months  Oct 2025 → Jun 2026  (9 data points)
+// ─────────────────────────────────────────────────────────────
+const WW_MONTHS = ['2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'];
+>>>>>>> origin/main
 
 const formatMonth = (month: string) => {
   const [year, m] = month.split('-');
@@ -54,6 +60,7 @@ const getWWOffset = (range: TimeRange): number => (range === '3m' ? 3 : 0);
 // Data  (values in thousands, i.e. 142 = 142 000)
 // ─────────────────────────────────────────────────────────────
 const ORGANIC_TRAFFIC_WW: Record<string, number[]> = {
+<<<<<<< HEAD
   splashtop:   [125000, 130000, 141000, 142000, 130000, 137000, 142000, 151000, 159000, 174000, 164000, 229000, 184000, 168396, 183656],
   teamviewer:  [504000, 513000, 493000, 500000, 478000, 522000, 551000, 504000, 523000, 514000, 546000, 486000, 479000, 518680, 448271],
   anydesk:     [412000, 444000, 416000, 416000, 407000, 418000, 427000, 426000, 441000, 439000, 376000, 387000, 398000, 391507, 328574],
@@ -75,6 +82,29 @@ const NON_BRANDED_TRAFFIC_WW: Record<string, number[]> = {
   anydesk:     [ 22000,  32000,  22000,  21000,  48000,  30000,  24000,  23000,  28000,  25000,  46000,  30000,  25000,  36000,  23000],
   beyondtrust: [ 33000,  43000,  42000,  41000,  36000,  35000,  31000,  31000,  31000,  32000,  38000,  37000,  39000,  48000,  44000],
   gotomypc:    [  7000,   8000,   7000,   5000,   4000,   4000,   4000,   3000,   4000,   3000,   5000,   4000,   3000,   2000,   3000],
+=======
+  splashtop:   [142000, 130000, 137000, 142000, 151000, 159000, 174000, 164000, 229000, 184000],
+  teamviewer:  [500000, 478000, 522000, 551000, 504000, 523000, 514000, 546000, 486000, 479000],
+  anydesk:     [416000, 407000, 418000, 427000, 426000, 441000, 439000, 376000, 387000, 398000],
+  beyondtrust: [ 58000,  55000,  52000,  46000,  47000,  39000,  41000,  45000,  41000,  49000],
+  gotomypc:    [ 48000,  47000,  65000,  64000,  64000,  65000,  64000,  49000,  45000,  62000],
+};
+
+const BRANDED_TRAFFIC_WW: Record<string, number[]> = {
+  splashtop:   [103000,  82000,  93000,  93000,  94000,  90000,  92000,  94000,  87000,  98000],
+  teamviewer:  [444000, 360000, 411000, 431000, 425000, 425000, 429000, 410000, 367000, 330000],
+  anydesk:     [395000, 359000, 388000, 403000, 403000, 413000, 414000, 330000, 357000, 373000],
+  beyondtrust: [ 17000,  19000,  16000,  14000,  16000,   8000,   9000,   7000,   4000,   9000],
+  gotomypc:    [ 43000,  43000,  60000,  60000,  61000,  61000,  60000,  44000,  41000,  60000],
+};
+
+const NON_BRANDED_TRAFFIC_WW: Record<string, number[]> = {
+  splashtop:   [ 39000,  48000,  45000,  49000,  57000,  69000,  81000,  69000, 142000,  86000],
+  teamviewer:  [ 56000, 118000, 111000, 120000,  79000,  98000,  84000, 136000, 119000, 150000],
+  anydesk:     [ 21000,  48000,  30000,  24000,  23000,  28000,  25000,  46000,  30000,  25000],
+  beyondtrust: [ 41000,  36000,  35000,  31000,  31000,  31000,  32000,  38000,  37000,  39000],
+  gotomypc:    [  5000,   4000,   4000,   4000,   3000,   4000,   3000,   5000,   4000,   3000],
+>>>>>>> origin/main
 };
 
 // ─────────────────────────────────────────────────────────────
@@ -232,6 +262,7 @@ export function SlideTrafficOverviewTabsWW({ onNavigateHome }: SlideTrafficOverv
             icon={TrendingUp}
             type="success"
             title="Splashtop"
+<<<<<<< HEAD
             content={<>From Jul 2025 to Sep 2026, organic traffic grew <strong>125K → 183.7K (+46.9%)</strong>, sustained upward momentum.</>}
           />
           <InsightCard
@@ -239,6 +270,15 @@ export function SlideTrafficOverviewTabsWW({ onNavigateHome }: SlideTrafficOverv
             type="error"
             title="Competitions"
             content={<>TeamViewer declined <strong>504K → 448K (−11.1%)</strong> and AnyDesk declined <strong>412K → 329K (−20.1%)</strong> by Sep 2026.</>}
+=======
+            content={<>From Oct 2025 to Jul 2026, organic traffic grew <strong>142K → 184K (+29.6%)</strong>, sustained upward momentum.</>}
+          />
+          <InsightCard
+            icon={TrendingUp}
+            type="success"
+            title="Competitions"
+            content={<>TeamViewer declined <strong>500K → 479K (−4.2%)</strong> and AnyDesk declined <strong>416K → 398K (−4.3%)</strong> by Jul 2026.</>}
+>>>>>>> origin/main
           />
         </InsightsSection>
       );
@@ -249,13 +289,21 @@ export function SlideTrafficOverviewTabsWW({ onNavigateHome }: SlideTrafficOverv
             icon={TrendingDown}
             type="error"
             title="Splashtop"
+<<<<<<< HEAD
             content={<>From Jul 2025 to Sep 2026, branded traffic declined <strong>95K → 82K (−13.7%)</strong>, while overall organic grew.</>}
+=======
+            content={<>From Oct 2025 to Jul 2026, branded traffic slightly declined <strong>103K → 98K (−4.9%)</strong>, while overall organic grew.</>}
+>>>>>>> origin/main
           />
           <InsightCard
             icon={TrendingDown}
             type="error"
             title="Competitions"
+<<<<<<< HEAD
             content={<>TeamViewer declined <strong>457K → 301K (−34.1%)</strong>; AnyDesk declined <strong>389K → 305K (−21.6%)</strong> by Sep 2026.</>}
+=======
+            content={<>TeamViewer declined <strong>444K → 330K (−25.7%)</strong>; AnyDesk declined <strong>395K → 373K (−5.6%)</strong> by Jul 2026.</>}
+>>>>>>> origin/main
           />
         </InsightsSection>
       );
@@ -266,13 +314,21 @@ export function SlideTrafficOverviewTabsWW({ onNavigateHome }: SlideTrafficOverv
             icon={TrendingUp}
             type="success"
             title="Splashtop"
+<<<<<<< HEAD
             content={<>From Jul 2025 to Sep 2026, non-branded traffic grew <strong>30K → 101K (+236.7%)</strong>, strong discovery gain across all competitors.</>}
+=======
+            content={<>From Oct 2025 to Jul 2026, non-branded traffic grew <strong>39K → 86K (+120.5%)</strong>, strong discovery gain across all competitors.</>}
+>>>>>>> origin/main
           />
           <InsightCard
             icon={TrendingUp}
             type="success"
             title="Competitions"
+<<<<<<< HEAD
             content={<>TeamViewer grew <strong>47K → 147K (+212.8%)</strong>; AnyDesk declined <strong>22K → 23K (+4.5%)</strong> in Sep 2026.</>}
+=======
+            content={<>TeamViewer grew <strong>56K → 150K (+167.9%)</strong>; AnyDesk grew <strong>21K → 25K (+19.0%)</strong> in Jul 2026.</>}
+>>>>>>> origin/main
           />
         </InsightsSection>
       );
@@ -354,13 +410,21 @@ export function SlideTrafficOverviewTabsWW({ onNavigateHome }: SlideTrafficOverv
   };
 
   const visibleList = WW_COMPETITORS.filter((c) => visibleCompetitors.has(c.id));
+<<<<<<< HEAD
   const editMonths  = ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'];
+=======
+  const editMonths  = ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+>>>>>>> origin/main
 
   return (
     <SlideContainer slideNumber={5} onNavigateHome={onNavigateHome}>
       <SlideHeader
         title="Organic Traffic Overview"
+<<<<<<< HEAD
         subtitle="(Jul 2025 - Sep 2026) · Worldwide"
+=======
+        subtitle="(Oct 2025 - Jul 2026) · Worldwide"
+>>>>>>> origin/main
       />
 
       {/* Tabs + time filter */}

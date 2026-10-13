@@ -16,7 +16,11 @@ const REMOTE_VENDORS = [
   { id: 'gotomypc',    name: 'GoTo (MyPC)', color: '#EF4444' },
 ];
 
+<<<<<<< HEAD
 const MONTHS = ['2025-07', '2025-08', '2025-09', '2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09'];
+=======
+const MONTHS = ['2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'];
+>>>>>>> origin/main
 
 const formatMonth = (m: string) => {
   const [y, mo] = m.split('-');
@@ -25,6 +29,7 @@ const formatMonth = (m: string) => {
 
 // Remote Support — Oct 2025 → Jun 2026
 const TOTAL_KEYWORDS_INIT = {
+<<<<<<< HEAD
   splashtop:   [145, 139,  95,  80,  78,  78,  86,  81,  81,  65,  71,  80,  73,  70,  61],
   teamviewer:  [142, 141, 108,  93,  91,  86,  84,  83,  78,  78,  75,  74,  71,  70,  74],
   anydesk:     [136, 130,  96,  83,  79,  81,  83,  77,  66,  62,  63,  49,  49,  51,  51],
@@ -44,6 +49,27 @@ const TRAFFIC_INIT = {
   anydesk:     [1432, 1000, 1451, 1406, 1311, 1525, 1543, 1682, 1255, 2011, 1891, 1131, 1511, 1757, 1398],
   beyondtrust: [2655,  447,  554, 2416, 2492,  502,  604,  871,  889,  697,  787,  818,  565, 1176, 2405],
   gotomypc:    [  34,   11,    7,   43,   23,   37,   36,   21,    4,    0,    1,    2,    0,    0,    0],
+=======
+  splashtop:   [ 80,  78,  78,  86,  81,  81,  65,  71, 80, 73],
+  teamviewer:  [ 93,  91,  86,  84,  83,  78,  78,  75, 74, 71],
+  anydesk:     [ 83,  79,  81,  83,  77,  66,  62,  63, 49, 49],
+  beyondtrust: [104, 100,  73,  74,  73,  73,  64,  71, 58, 51],
+  gotomypc:    [ 21,  14,  19,  19,  14,   6,   1,   1, 2,  0],
+};
+const PAGE_ONE_INIT = {
+  splashtop:   [64, 74, 72, 80, 74, 78, 62, 69, 74, 73],
+  teamviewer:  [83, 85, 78, 74, 72, 73, 76, 71, 72, 70],
+  anydesk:     [75, 75, 75, 78, 71, 60, 61, 61, 46, 47],
+  beyondtrust: [84, 90, 64, 66, 61, 65, 61, 68, 57, 49],
+  gotomypc:    [ 5,  5,  8,  7,  6,  2,  0,  1, 1,  0],
+};
+const TRAFFIC_INIT = {
+  splashtop:   [ 506,  655,  561,  880,  816,  690,  724,  882, 666, 803],
+  teamviewer:  [1206, 1030, 1037, 1369, 1752, 1651, 1427, 1360, 1409, 1405],
+  anydesk:     [1406, 1311, 1525, 1543, 1682, 1255, 2011, 1891, 1131, 1511],
+  beyondtrust: [2416, 2492,  502,  604,  871,  889,  697,  787, 818, 565],
+  gotomypc:    [  43,   23,   37,   36,   21,    4,    0,    1, 2,   0],
+>>>>>>> origin/main
 };
 
 type TabType = 'keywords' | 'page-one' | 'traffic';
@@ -95,25 +121,44 @@ export function SlideOTSecurity({ onNavigateHome }: Props) {
   })();
 
   const getChartData = () => activeTab === 'keywords' ? kwData : activeTab === 'page-one' ? p1Data : trData;
+<<<<<<< HEAD
   const latestIdx = 14; // Sep 2026
+=======
+  const latestIdx = 9; // Jul 2026
+>>>>>>> origin/main
 
   const getInsights = () => {
     if (activeTab === 'keywords') return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingDown} type="error" title="Splashtop" content={<>From Jul 2025 to Sep 2026, keywords declined <strong>145 → 61 (−57.9%)</strong>, continued category coverage drop.</>} />
         <InsightCard icon={TrendingDown} type="error" title="Competitions" content={<>TeamViewer declined <strong>142 → 70 (−50.7%)</strong>, while AnyDesk dropped <strong>136 → 51 (−62.5%)</strong> in Aug 2026.</>} />
+=======
+        <InsightCard icon={TrendingDown} type="error" title="Splashtop" content={<>From Oct 2025 to Jul 2026, keywords declined <strong>80 → 73 (−8.8%)</strong>, slight category coverage drop.</>} />
+        <InsightCard icon={TrendingDown} type="error" title="Competitions" content={<>TeamViewer declined <strong>93 → 71 (−23.7%)</strong>, while AnyDesk dropped <strong>83 → 49 (−41.0%)</strong> in Jul 2026.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
     if (activeTab === 'page-one') return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop" content={<>From Jul 2025 to Sep 2026, page-1 keywords grew <strong>58 → 60 (+3.4%)</strong>, improving SERP visibility.</>} />
         <InsightCard icon={TrendingDown} type="error" title="Competitions" content={<>TeamViewer declined <strong>77 → 69 (−10.4%)</strong>, while AnyDesk declined <strong>68 → 51 (−25.0%)</strong> in Aug 2026.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop" content={<>From Oct 2025 to Jul 2026, page-1 keywords grew <strong>64 → 73 (+14.1%)</strong>, improving SERP visibility.</>} />
+        <InsightCard icon={TrendingDown} type="error" title="Competitions" content={<>TeamViewer declined <strong>83 → 70 (−15.7%)</strong>, while AnyDesk declined <strong>75 → 47 (−37.3%)</strong> in Jul 2026.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
     return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop" content={<>From Jul 2025 to Sep 2026, traffic grew <strong>387 → 573 (+48.1%)</strong>, showing strong upward growth.</>} />
         <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>901 → 1,313 (+45.7%)</strong>, while AnyDesk grew <strong>1,432 → 1,757 (+22.7%)</strong>.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop" content={<>From Oct 2025 to Jul 2026, traffic increased <strong>506 → 803 (+58.7%)</strong>, showing strong upward growth.</>} />
+        <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>1,206 → 1,405 (+16.5%)</strong>, while AnyDesk grew <strong>1,406 → 1,511 (+7.5%)</strong>.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
   };
@@ -182,11 +227,19 @@ export function SlideOTSecurity({ onNavigateHome }: Props) {
     { id: 'traffic'  as TabType, label: 'Cumulative Traffic' },
   ];
 
+<<<<<<< HEAD
   const editMonths = ['Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'];
 
   return (
     <SlideContainer slideNumber={10} onNavigateHome={onNavigateHome} source="Ahrefs">
       <SlideHeader title="Remote Support" subtitle="(Jul 2025 - Sep 2026)" />
+=======
+  const editMonths = ['Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul'];
+
+  return (
+    <SlideContainer slideNumber={10} onNavigateHome={onNavigateHome} source="Ahrefs">
+      <SlideHeader title="Remote Support" subtitle="(Oct 2025 - Jul 2026)" />
+>>>>>>> origin/main
       {!isEditing ? (
         <div className="flex-1 flex flex-col gap-6">
           <div className="flex items-center justify-between">
@@ -216,7 +269,11 @@ export function SlideOTSecurity({ onNavigateHome }: Props) {
       ) : (
         <div className="flex-1 overflow-auto">
           <div className="bg-white border border-gray-200 rounded-lg p-6">
+<<<<<<< HEAD
             <h3 className="text-sm font-bold text-gray-900 mb-4">Edit Remote Support Data (Oct 2025 – Aug 2026)</h3>
+=======
+            <h3 className="text-sm font-bold text-gray-900 mb-4">Edit Remote Support Data (Oct 2025 – Jul 2026)</h3>
+>>>>>>> origin/main
             <div className="space-y-6">
               {REMOTE_VENDORS.map(v => (
                 <div key={v.id} className="bg-gray-50 rounded-lg p-4 border border-gray-200">

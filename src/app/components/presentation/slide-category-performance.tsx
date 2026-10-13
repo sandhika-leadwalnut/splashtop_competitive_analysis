@@ -18,7 +18,11 @@ const REMOTE_VENDORS = [
 ];
 
 // Oct 2025 → Jun 2026 (9 months)
+<<<<<<< HEAD
 const MONTHS = ['2025-07', '2025-08', '2025-09', '2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09'];
+=======
+const MONTHS = ['2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'];
+>>>>>>> origin/main
 
 const formatMonth = (m: string) => {
   const [y, mo] = m.split('-');
@@ -27,29 +31,53 @@ const formatMonth = (m: string) => {
 
 // ── AI Traffic (total AI-referred traffic) ─────────────────────────────────
 const AI_TRAFFIC_INIT = {
+<<<<<<< HEAD
   splashtop:   [ 1398,  5114,  4394,  4107,  6442,  9782, 10787, 12769, 15258, 13228, 14893, 23804, 11931, 16694, 21179],
   teamviewer:  [ 3392,  6704,  8967,  9332, 15600,  9363, 48299, 11044, 19248, 18752, 18433, 20712, 60656, 46942, 68247],
   anydesk:     [ 1163,  2958,  1611,  2058,  1872,  3719,  2899,  2580,  5943,  6581,  3885,  3565, 12748, 20985, 15384],
   beyondtrust: [ 1167,  2458,  3845,  5166,  2928,  5197,  2904,  4135,  5329,  7924, 10170,  8351,  6883, 13357, 10342],
   gotomypc:    [   28,  1053,    83,    96,   112,   221,    60,    41,   198,   113,    54,   578,  5118,  1677, 14603],
+=======
+  splashtop:   [ 4107,  6442,  9782, 10787, 12769, 15258, 13228, 14893, 23804, 11931],
+  teamviewer:  [ 9332, 15600,  9363, 48299, 11044, 19248, 18752, 18433, 20712, 60656],
+  anydesk:     [ 2058,  1872,  3719,  2899,  2580,  5943,  6581,  3885,  3565, 12748],
+  beyondtrust: [ 5166,  2928,  5197,  2904,  4135,  5329,  7924, 10170,  8351,  6883],
+  gotomypc:    [   96,   112,   221,    60,    41,   198,   113,    54,   578,  5118],
+>>>>>>> origin/main
 };
 
 // ── Branded AI Traffic ────────────────────────────────────────────────────
 const BRANDED_INIT = {
+<<<<<<< HEAD
   splashtop:   [  330, 1667, 1479,  882, 1049,  819,  766, 3745, 6049, 6494, 4929, 2962,  6019,  9218, 12345],
   teamviewer:  [ 1624, 4004, 4524, 4153, 3469, 3093, 3787, 4777, 7931, 8985, 9858, 5760,  7733, 20761, 35198],
   anydesk:     [  945, 1347, 1025, 1274, 1163, 2663, 1860, 1448, 2574, 3831, 2154, 2227,  7850, 15868, 11006],
   beyondtrust: [  700, 1157, 2205, 3670, 1405, 2860, 1270, 2095, 2191, 4210, 3999, 1864,  2661,  4134,  5362],
   gotomypc:    [    2,   26,   27,   26,   26,   11,    9,    3,   15,   15,   10,   12,  3809,   810, 14168],
+=======
+  splashtop:   [  882, 1049,  819,  766, 3745, 6049, 6494, 4929, 2962,  6019],
+  teamviewer:  [ 4153, 3469, 3093, 3787, 4777, 7931, 8985, 9858, 5760,  7733],
+  anydesk:     [ 1274, 1163, 2663, 1860, 1448, 2574, 3831, 2154, 2227,  7850],
+  beyondtrust: [ 3670, 1405, 2860, 1270, 2095, 2191, 4210, 3999, 1864,  2661],
+  gotomypc:    [   26,   26,   11,    9,    3,   15,   15,   10,   12,  3809],
+>>>>>>> origin/main
 };
 
 // ── Non-Branded AI Traffic ────────────────────────────────────────────────
 const NON_BRANDED_INIT = {
+<<<<<<< HEAD
   splashtop:   [ 1068,  3447,  2915,  3225,  5393,  8963, 10021,  9024,  9209,  6734,  9964, 20842,  5912,  7476,  8834],
   teamviewer:  [ 1768,  2700,  4443,  5179, 12131,  6270, 44512,  6267, 11317,  9767,  8575, 14952, 52923, 26181, 33049],
   anydesk:     [  218,  1611,   586,   784,   709,  1056,  1039,  1132,  3369,  2750,  1731,  1338,  4898,  5117,  4378],
   beyondtrust: [  467,  1301,  1640,  1496,  1523,  2337,  1634,  2040,  3138,  3714,  6171,  6487,  4222,  9223,  4980],
   gotomypc:    [   26,  1027,    56,    70,    86,   210,    51,    38,   183,    98,    44,   566,  1309,   867,   435],
+=======
+  splashtop:   [ 3225,  5393,  8963, 10021,  9024,  9209,  6734,  9964, 20842,  5912],
+  teamviewer:  [ 5179, 12131,  6270, 44512,  6267, 11317,  9767,  8575, 14952, 52923],
+  anydesk:     [  784,   709,  1056,  1039,  1132,  3369,  2750,  1731,  1338,  4898],
+  beyondtrust: [ 1496,  1523,  2337,  1634,  2040,  3138,  3714,  6171,  6487,  4222],
+  gotomypc:    [   70,    86,   210,    51,    38,   183,    98,    44,   566,  1309],
+>>>>>>> origin/main
 };
 
 type TabType = 'aiTraffic' | 'branded' | 'nonBranded';
@@ -123,25 +151,44 @@ export function SlideCategoryPerformance({ onNavigateHome }: { onNavigateHome?: 
     return Math.ceil(max * 1.15);
   })();
 
+<<<<<<< HEAD
   const latestIdx = 14; // Sep 2026
+=======
+  const latestIdx = 9; // Jul 2026
+>>>>>>> origin/main
 
   const getInsights = () => {
     if (activeTab === 'aiTraffic') return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Jul 2025 to Sep 2026, AI traffic grew <strong>1,398 → 21,179 (+1,415%)</strong>, strong growth in AI-driven discovery.</>} />
         <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>3,392 → 68,247 (+1,912%)</strong>, while BeyondTrust increased <strong>1,167 → 10,342 (+786%)</strong>.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Oct 2025 to Jul 2026, AI traffic grew <strong>4,107 → 11,931 (+190.5%)</strong>, strong growth in AI-driven discovery.</>} />
+        <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>9,332 → 60,656 (+549.9%)</strong>, while BeyondTrust increased <strong>5,166 → 6,883 (+33.2%)</strong>.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
     if (activeTab === 'branded') return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Jul 2025 to Sep 2026, branded traffic reached <strong>330 → 12,345 (+3,641%)</strong>, rising brand visibility in AI results.</>} />
         <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>1,624 → 35,198 (+2,067%)</strong>, while AnyDesk surged <strong>945 → 11,006 (+1,065%)</strong>.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Oct 2025 to Jul 2026, branded traffic reached <strong>882 → 6,019 (+582.2%)</strong>, rising brand visibility in AI results.</>} />
+        <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>4,153 → 7,733 (+86.2%)</strong>, while AnyDesk surged <strong>1,274 → 7,850 (+515.8%)</strong>.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
     return (
       <InsightsSection>
+<<<<<<< HEAD
         <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Jul 2025 to Sep 2026, non-branded traffic grew <strong>1,068 → 8,834 (+727%)</strong>, indicating discovery-led AI growth.</>} />
         <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>1,768 → 33,049 (+1,769%)</strong>, while BeyondTrust increased <strong>467 → 4,980 (+966%)</strong>.</>} />
+=======
+        <InsightCard icon={TrendingUp} type="success" title="Splashtop"    content={<>From Oct 2025 to Jul 2026, non-branded traffic grew <strong>3,225 → 5,912 (+83.3%)</strong>, indicating discovery-led AI growth.</>} />
+        <InsightCard icon={TrendingUp} type="success" title="Competitions" content={<>TeamViewer grew <strong>5,179 → 52,923 (+921.9%)</strong>, while BeyondTrust increased <strong>1,496 → 4,222 (+182.2%)</strong>.</>} />
+>>>>>>> origin/main
       </InsightsSection>
     );
   };
@@ -183,13 +230,21 @@ export function SlideCategoryPerformance({ onNavigateHome }: { onNavigateHome?: 
     { id: 'nonBranded' as TabType, label: 'Non-Branded'  },
   ];
 
+<<<<<<< HEAD
   const editMonths = ['Jul','Aug','Sep','Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep'];
+=======
+  const editMonths = ['Oct','Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul'];
+>>>>>>> origin/main
 
   const vis = REMOTE_VENDORS.filter(v => visible.has(v.id));
 
   return (
     <SlideContainer slideNumber={15} onNavigateHome={onNavigateHome} source="SEMrush">
+<<<<<<< HEAD
       <SlideHeader title="AI Overview Traffic" subtitle="(Jul 2025 - Sep 2026)" />
+=======
+      <SlideHeader title="AI Overview Traffic" subtitle="(Oct 2025 - Jul 2026)" />
+>>>>>>> origin/main
 
       {!isEditing ? (
         <div className="flex-1 flex flex-col gap-6">

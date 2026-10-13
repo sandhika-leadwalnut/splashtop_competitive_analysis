@@ -15,6 +15,7 @@ interface ContentItem {
 
 const teamviewerContent: ContentItem[] = [
   {
+<<<<<<< HEAD
     category: 'MANUFACTURING',
     title: 'Manufacturers Live with Fragmentation Until Security Forces Change',
     url: 'https://www.teamviewer.com/en-in/insights/manufacturers-live-with-fragmentation-until-security-forces-change/',
@@ -37,11 +38,48 @@ const teamviewerContent: ContentItem[] = [
     title: 'Introducing TeamViewer Model Context Protocol Integration',
     url: 'https://www.teamviewer.com/en-in/insights/introducing-teamviewer-model-context-protocol-integration/',
     date: 'Sep-26',
+=======
+    category: 'INDUSTRY RECOGNITION',
+    title: 'TeamViewer Tops Frost & Sullivan\'s 2026 AR-Centric Augmented Connected Worker Rankings',
+    url: 'https://www.teamviewer.com/en-in/global/company/press/2026/teamviewer-tops-frost-sullivans-2026-ar-centric-augmented-connected-worker-rankings/',
+    date: 'Jul-26',
+  },
+  {
+    category: 'IT AUTOMATION',
+    title: 'TeamViewer Natural Language Scripting for DEX & IT Automation',
+    url: 'https://www.teamviewer.com/en-in/global/company/press/2026/teamviewer-natural-language-scripting-dex-it-automation/',
+    date: 'Jul-26',
+  },
+  {
+    category: 'INDUSTRY RECOGNITION',
+    title: 'TeamViewer Named Leader in IDC MarketScape Worldwide Digital Employee Experience 2026',
+    url: 'https://www.teamviewer.com/en-in/global/company/press/2026/teamviewer-idc-marketscape-worldwide-digital-employee-experience-2026-leader/',
+    date: 'Jul-26',
+  },
+  {
+    category: 'AI WORKPLACE',
+    title: 'AI Workplace Autonomy – Global Research Study',
+    url: 'https://www.teamviewer.com/en-in/global/company/press/2026/ai-workplace-autonomy-global-research/',
+    date: 'Jul-26',
+  },
+  {
+    category: 'PARTNERSHIPS',
+    title: 'TeamViewer & ServiceNow Launch Strategic Partnership to Accelerate Autonomous IT Operations',
+    url: 'https://www.teamviewer.com/en-in/global/company/press/2026/teamviewer-servicenow-launch-strategic-partnership-accelerate-autonomous-it-operations/',
+    date: 'Jul-26',
+  },
+  {
+    category: 'INDUSTRY RECOGNITION',
+    title: 'TeamViewer Named Best Connected Worker Platform – PAC Innovation Radar 2026',
+    url: 'https://www.teamviewer.com/en-in/global/company/press/2026/teamviewer-best-connected-worker-platform-pac-innovation-radar-2026/',
+    date: 'Jul-26',
+>>>>>>> origin/main
   },
 ];
 
 const beyondtrustContent: ContentItem[] = [
   {
+<<<<<<< HEAD
     category: 'AI SUPPORT',
     title: 'Beekon: AI-Powered Customer Support',
     url: 'https://www.beyondtrust.com/blog/entry/beekon-ai-powered-customer-support',
@@ -76,15 +114,58 @@ const beyondtrustContent: ContentItem[] = [
     title: 'Amazon Bedrock AgentCore Python SDK RCE CVEs',
     url: 'https://www.beyondtrust.com/blog/entry/amazon-bedrock-agentcore-python-sdk-rce-cves',
     date: 'Sep-26',
+=======
+    category: 'CLOUD SECURITY',
+    title: 'Salesforce OAuth Attacks via Trusted Integrations',
+    url: 'https://www.beyondtrust.com/blog/entry/salesforce-oauth-attacks-trusted-integrations',
+    date: 'Jul-26',
+  },
+  {
+    category: 'ITSM SECURITY',
+    title: 'ServiceNow Security Boundaries, ACL Scope & RCA',
+    url: 'https://www.beyondtrust.com/blog/entry/servicenow-security-boundaries-acl-scope-rca',
+    date: 'Jul-26',
+  },
+  {
+    category: 'AI SECURITY',
+    title: 'OpenAI Codex Remote Control & C2 Abuse',
+    url: 'https://www.beyondtrust.com/blog/entry/open-ai-codex-remote-control-c2-abuse',
+    date: 'Jul-26',
+  },
+  {
+    category: 'ITSM SECURITY',
+    title: 'ITSM Security: BeyondTrust + Atlassian Jira Integration',
+    url: 'https://www.beyondtrust.com/blog/entry/itsm-security-beyondtrust-atlassian-jira',
+    date: 'Jul-26',
+  },
+  {
+    category: 'PRODUCT UPDATE',
+    title: 'Privileged Remote Access 26.2',
+    url: 'https://www.beyondtrust.com/blog/entry/privileged-remote-access-26-2',
+    date: 'Jul-26',
+  },
+  {
+    category: 'VULNERABILITY RESEARCH',
+    title: 'Microsoft Vulnerabilities Report',
+    url: 'https://www.beyondtrust.com/blog/entry/microsoft-vulnerabilities-report',
+    date: 'Jul-26',
+>>>>>>> origin/main
   },
 ];
 
 const anyDeskContent: ContentItem[] = [
   {
+<<<<<<< HEAD
     category: 'REMOTE MANAGEMENT',
     title: 'Remote Device Management Best Practices',
     url: 'https://anydesk.com/blog/remote-device-management-best-practices',
     date: 'Sep-26',
+=======
+    category: 'REMOTE ACCESS',
+    title: 'Secure Remote Access Best Practices',
+    url: 'https://anydesk.com/blog/secure-remote-access-best-practices',
+    date: 'Jul-26',
+>>>>>>> origin/main
   },
 ];
 
@@ -95,19 +176,31 @@ const TAB_CONFIG: Record<Tab, { label: string; color: string; activeClass: strin
     label: 'TeamViewer',
     color: '#2563EB',
     activeClass: 'bg-blue-600 text-white shadow-md',
+<<<<<<< HEAD
     description: 'Sep 2026 content covering manufacturing fragmentation, digital friction impact, product updates (TeamViewer Voices), and MCP integration.',
+=======
+    description: 'Recent content focused on industry recognition (Frost & Sullivan, IDC MarketScape, PAC), AI workplace autonomy, and strategic ServiceNow partnership.',
+>>>>>>> origin/main
   },
   beyondtrust: {
     label: 'BeyondTrust',
     color: '#DC2626',
     activeClass: 'bg-red-600 text-white shadow-md',
+<<<<<<< HEAD
     description: 'Sep 2026 content covering AI-powered support, password security, AI agent threats (Codex), frontier AI, OT remote access zero trust, and AWS AgentCore vulnerability research.',
+=======
+    description: 'Recent content covering cloud & AI security threats (Salesforce OAuth, OpenAI Codex C2), ITSM security with Atlassian Jira, and the Microsoft Vulnerabilities Report.',
+>>>>>>> origin/main
   },
   anydesk: {
     label: 'AnyDesk',
     color: '#16A34A',
     activeClass: 'bg-green-600 text-white shadow-md',
+<<<<<<< HEAD
     description: 'Sep 2026 content covering remote device management best practices.',
+=======
+    description: 'Recent content focusing on secure remote access best practices and enterprise security guidance.',
+>>>>>>> origin/main
   },
 };
 
@@ -190,7 +283,11 @@ export function SlideContentGap({ onNavigateHome }: { onNavigateHome?: () => voi
             </div>
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
+<<<<<<< HEAD
                 <h3 className="text-lg font-bold text-gray-900">New Pages Added in Sep 2026</h3>
+=======
+                <h3 className="text-lg font-bold text-gray-900">New Pages Added in Jul 2026</h3>
+>>>>>>> origin/main
                 <span className={`px-3 py-1 ${BADGE_MAP[activeTab]} text-white text-xs font-bold rounded-full`}>
                   {currentContent.length} NEW {currentContent.length === 1 ? 'PAGE' : 'PAGES'}
                 </span>

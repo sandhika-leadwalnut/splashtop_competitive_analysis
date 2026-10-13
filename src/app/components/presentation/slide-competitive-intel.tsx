@@ -2,7 +2,11 @@ import { useState } from 'react';
 import { FileText, ExternalLink } from 'lucide-react';
 import { SlideContainer, SlideHeader, SlideFooter } from './design-system';
 
+<<<<<<< HEAD
 type Tab = 'teamviewer' | 'beyondtrust' | 'anydesk';
+=======
+type Tab = 'teamviewer' | 'beyondtrust';
+>>>>>>> origin/main
 
 interface Page {
   category: string;
@@ -14,21 +18,42 @@ interface Page {
 
 const teamviewerPages: Page[] = [
   {
+<<<<<<< HEAD
     category: 'MANUFACTURING',
     title: 'Manufacturers Live with Fragmentation Until Security Forces Change',
     url: 'https://www.teamviewer.com/en-in/insights/manufacturers-live-with-fragmentation-until-security-forces-change/',
     published: 'Published: Sep 2026',
+=======
+    category: 'IT NEWS',
+    title: 'IT News & Research Roundup – March',
+    url: 'https://www.teamviewer.com/en-in/insights/it-news-research-roundup-march/',
+    published: 'Published: Mar 2026',
+    type: 'insight',
+  },
+  {
+    category: 'EMPLOYEE EXPERIENCE',
+    title: 'Proactive IT in Action: Delivering Seamless Digital Employee Experiences',
+    url: 'https://www.teamviewer.com/en-in/insights/proactive-it-in-action-delivering-seamless-digital-employee-experiences/',
+    published: 'Published: Mar 2026',
+>>>>>>> origin/main
     type: 'insight',
   },
   {
     category: 'DIGITAL WORKPLACE',
+<<<<<<< HEAD
     title: 'Are You Missing the Impact of Digital Friction on Your Business?',
     url: 'https://www.teamviewer.com/en-in/insights/are-you-missing-the-impact-of-digital-friction-on-your-business/',
     published: 'Published: Sep 2026',
+=======
+    title: 'From Digital Workplace Ambition to Maturity',
+    url: 'https://www.teamviewer.com/en-in/insights/from-digital-workplace-ambition-to-maturity/',
+    published: 'Published: Mar 2026',
+>>>>>>> origin/main
     type: 'insight',
   },
   {
     category: 'PRODUCT UPDATE',
+<<<<<<< HEAD
     title: 'Introducing TeamViewer Voices',
     url: 'https://www.teamviewer.com/en-in/insights/introducing-teamviewer-voices/',
     published: 'Published: Sep 2026',
@@ -39,12 +64,32 @@ const teamviewerPages: Page[] = [
     title: 'Introducing TeamViewer Model Context Protocol Integration',
     url: 'https://www.teamviewer.com/en-in/insights/introducing-teamviewer-model-context-protocol-integration/',
     published: 'Published: Sep 2026',
+=======
+    title: 'TeamViewer ONE UI Updates',
+    url: 'https://www.teamviewer.com/en-in/insights/teamviewer-one-ui-updates/',
+    published: 'Published: Mar 2026',
+    type: 'insight',
+  },
+  {
+    category: 'AI SECURITY',
+    title: 'From Prompts to Privileges: Securing the Age of AI Agents',
+    url: 'https://www.teamviewer.com/en-in/insights/from-prompts-to-privileges-securing-the-age-of-ai-agents/',
+    published: 'Published: Mar 2026',
+    type: 'insight',
+  },
+  {
+    category: 'IT OPERATIONS',
+    title: 'Minimize Disruption, Maximize Efficiency',
+    url: 'https://www.teamviewer.com/en-in/insights/minimize-disruption-maximize-efficiency/',
+    published: 'Published: Mar 2026',
+>>>>>>> origin/main
     type: 'insight',
   },
 ];
 
 const beyondtrustPages: Page[] = [
   {
+<<<<<<< HEAD
     category: 'AI SUPPORT',
     title: 'Beekon: AI-Powered Customer Support',
     url: 'https://www.beyondtrust.com/blog/entry/beekon-ai-powered-customer-support',
@@ -96,6 +141,91 @@ const anydeskPages: Page[] = [
     published: 'Published: Sep 2026',
     type: 'blog',
   },
+=======
+    category: 'VULNERABILITY',
+    title: 'OpenAI Codex Command Injection Vulnerability & GitHub Token',
+    url: 'https://www.beyondtrust.com/blog/entry/openai-codex-command-injection-vulnerability-github-token',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'COMPLIANCE',
+    title: 'Securing BES: NERC CIP-003-9 2026',
+    url: 'https://www.beyondtrust.com/blog/entry/securing-bes-nerc-cip-003-9-2026',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'AI SECURITY',
+    title: 'Securing Agentic AI Workloads',
+    url: 'https://www.beyondtrust.com/blog/entry/securing-agentic-ai-workloads',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'IDENTITY SECURITY',
+    title: 'AI Agent Identity Governance & Least Privilege',
+    url: 'https://www.beyondtrust.com/blog/entry/ai-agent-identity-governance-least-privilege',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'IT SUPPORT',
+    title: 'What is IT Support? Technical Support Tools & Service Desk Explained',
+    url: 'https://www.beyondtrust.com/blog/entry/what-is-it-support-your-technical-support-tools-and-service-desk-explained',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'CLOUD SECURITY',
+    title: 'Pwning AWS AgentCore Code Interpreter',
+    url: 'https://www.beyondtrust.com/blog/entry/pwning-aws-agentcore-code-interpreter',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'ZERO TRUST',
+    title: "An Analyst's Take: The Essential 8 Using Zero Trust to Avoid Compliance as a Strategy",
+    url: 'https://www.beyondtrust.com/blog/entry/an-analysts-take-the-essential-8-using-zero-trust-to-avoid-compliance-as-a-strategy',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'CRITICAL INFRASTRUCTURE',
+    title: 'Identity Security in Critical Infrastructure',
+    url: 'https://www.beyondtrust.com/blog/entry/identity-security-in-critical-infrastructure',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'AI SECURITY',
+    title: 'Preventing Shadow AI and NHI Risk',
+    url: 'https://www.beyondtrust.com/blog/entry/preventing-shadow-ai-and-nhi-risk',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'THREAT ADVISORY',
+    title: 'Iran Cyber Retaliation: Identity & Privilege Escalation',
+    url: 'https://www.beyondtrust.com/blog/entry/iran-cyber-retaliation-identity-privilege-escalation',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'THREAT ADVISORY',
+    title: 'Threat Advisory: Operation Epic Fury',
+    url: 'https://www.beyondtrust.com/blog/entry/threat-advisory-operation-epic-fury',
+    published: 'Published: 2026',
+    type: 'blog',
+  },
+  {
+    category: 'PODCAST',
+    title: 'Ep. 98 – Dahvid Schloss',
+    url: 'https://www.beyondtrust.com/podcast/ep-98-dahvid-schloss',
+    published: 'Published: 2026',
+    type: 'podcast',
+  },
+>>>>>>> origin/main
 ];
 
 const tabConfig = {
@@ -108,7 +238,11 @@ const tabConfig = {
     accentBg: 'bg-blue-50',
     accentText: 'text-blue-700',
     dotColor: 'bg-blue-500',
+<<<<<<< HEAD
     description: 'Sep 2026 content covering manufacturing fragmentation, digital friction, product updates, and MCP integration.',
+=======
+    description: 'Recent content expansion focusing on IT operations, DEX compliance, employee experience, and AI security.',
+>>>>>>> origin/main
     cardType: 'New Insights Pages',
   },
   beyondtrust: {
@@ -120,6 +254,7 @@ const tabConfig = {
     accentBg: 'bg-red-50',
     accentText: 'text-red-700',
     dotColor: 'bg-red-500',
+<<<<<<< HEAD
     description: 'Sep 2026 content covering AI-powered support, password security, AI agent threats, frontier AI, OT remote access, and AWS vulnerability research.',
     cardType: 'New Blog Posts',
   },
@@ -134,6 +269,10 @@ const tabConfig = {
     dotColor: 'bg-green-500',
     description: 'Sep 2026 content covering remote device management best practices.',
     cardType: 'New Blog Posts',
+=======
+    description: 'Recent content expansion covering AI security, identity governance, threat advisories, cloud security, and critical infrastructure protection.',
+    cardType: 'New Blog & Podcast Posts',
+>>>>>>> origin/main
   },
 };
 
@@ -150,6 +289,7 @@ export function SlideCompetitiveIntel({ onNavigateHome }: { onNavigateHome?: () 
 
       {/* ── Tab Row ── */}
       <div className="flex gap-2 mb-4 flex-shrink-0">
+<<<<<<< HEAD
         {(['teamviewer', 'beyondtrust', 'anydesk'] as Tab[]).map((tab) => {
           const borderColors: Record<Tab, string> = { teamviewer: 'border-blue-500', beyondtrust: 'border-red-500', anydesk: 'border-green-500' };
           return (
@@ -166,6 +306,23 @@ export function SlideCompetitiveIntel({ onNavigateHome }: { onNavigateHome?: () 
             </button>
           );
         })}
+=======
+        {(['teamviewer', 'beyondtrust'] as Tab[]).map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setActiveTab(tab)}
+            className={`px-5 py-2 rounded-lg text-[13px] font-bold border-2 transition-all duration-200 ${
+              activeTab === tab
+                ? tab === 'teamviewer'
+                  ? 'border-blue-500 bg-white text-gray-900 shadow-sm'
+                  : 'border-red-500 bg-white text-gray-900 shadow-sm'
+                : 'border-gray-200 bg-white text-gray-500 hover:border-gray-300'
+            }`}
+          >
+            {tabConfig[tab].label}
+          </button>
+        ))}
+>>>>>>> origin/main
       </div>
 
       {/* ── Content Card ── */}
@@ -179,7 +336,11 @@ export function SlideCompetitiveIntel({ onNavigateHome }: { onNavigateHome?: () 
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-3 mb-1">
               <h3 className="text-base font-bold text-gray-900">
+<<<<<<< HEAD
                 New Pages Added in Sep-26
+=======
+                New Pages Added in {activeTab === 'teamviewer' ? 'Mar-26' : '2026'}
+>>>>>>> origin/main
               </h3>
               <span className={`${cfg.badgeColor} text-white text-[10px] font-extrabold px-2.5 py-0.5 rounded-full tracking-wider`}>
                 {cfg.pages.length} NEW PAGES

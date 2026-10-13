@@ -21,10 +21,14 @@ export function SlideTOC({ onNavigate, onNavigateHome }: TOCProps) {
       title: '2. Organic Traffic Overview',
       icon: TrendingUp,
       color: '#EF4444',
+<<<<<<< HEAD
       items: [
         { label: 'Organic Traffic Overview', slideIndex: 4 },
         { label: 'Organic Traffic Overview', slideIndex: 5 },
       ],
+=======
+      slideIndex: 5, // Direct navigation
+>>>>>>> origin/main
     },
     {
       title: '3. Category-Wise Performance',
@@ -51,10 +55,14 @@ export function SlideTOC({ onNavigate, onNavigateHome }: TOCProps) {
       title: '5. Backlink Competitive Analysis',
       icon: Link2,
       color: '#6C9AFF',
+<<<<<<< HEAD
       items: [
         { label: 'Backlink Competitive Analysis', slideIndex: 16 },
         { label: 'Backlink Performance',          slideIndex: 17 },
       ],
+=======
+      slideIndex: 17,
+>>>>>>> origin/main
     },
     {
       title: '6. Competitive Insights',
