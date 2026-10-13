@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { ExternalLink, Globe, Layers, Star, Play } from 'lucide-react';
-=======
-import { ExternalLink, Shield, Award, Cpu } from 'lucide-react';
->>>>>>> origin/main
 import { useState } from 'react';
 import {
   SlideContainer,
@@ -10,16 +6,10 @@ import {
   SlideFooter,
 } from './design-system';
 
-<<<<<<< HEAD
 import imgSepTab1 from '@/imports/sep_tab_1-1.png';
 import imgSepTab2 from '@/imports/sep_tab_2-2.png';
 import imgSepTab3 from '@/imports/sep_tab_3-1.png';
 import imgSepTab4 from '@/imports/sep_tab_4.png';
-=======
-import imgAug1 from '@/imports/aug_1.png';
-import imgAug2 from '@/imports/aug_2.png';
-import imgAug3 from '@/imports/aug_3.png';
->>>>>>> origin/main
 
 
 interface Reference {
@@ -45,7 +35,6 @@ interface Finding {
 
 const findings: Finding[] = [
   {
-<<<<<<< HEAD
     id: 'teamviewer-homepage-integrations',
     icon: Globe,
     color: '#2563EB',
@@ -132,84 +121,6 @@ const findings: Finding[] = [
       },
     ],
     screenshot: imgSepTab4,
-=======
-    id: 'homepage-case-study-strategy',
-    icon: Cpu,
-    color: '#7C3AED',
-    bgColor: '#F5F3FF',
-    title: 'Homepage Case Study Strategy Highlights Product Portfolio & Customer Success',
-    competitor: 'TeamViewer',
-    pageUrl: 'https://www.teamviewer.com/en-us/',
-    pageUrlDisplay: 'teamviewer.com/en-us',
-    summary:
-      'TeamViewer\'s homepage features multiple customer case studies across different products, with links to individual stories and a centralized case study hub. Splashtop showcases only a single case study, limiting visibility into its broader product portfolio and customer success.',
-    opportunity:
-      'Highlight multiple customer success stories for different products and industries on the homepage, with a CTA to the case study hub to improve product discovery, credibility, and engagement.',
-    bullets: [
-      'Rems-Murr-Kliniken goes paperless with TeamViewer Tensor — showcasing digital transformation in healthcare.',
-      'MEDIFOX DAN relies on in-app support for customer care — demonstrating software/healthcare integration.',
-      'DB Schenker overcomes logistics challenges with TeamViewer Frontline Pick — highlighting AR-powered field workflows.',
-      '"Discover more" CTA links directly to the centralized case study hub, driving deeper product discovery.',
-    ],
-    references: [
-      {
-        label: 'TeamViewer – Homepage',
-        url: 'https://www.teamviewer.com/en-us/',
-      },
-    ],
-    screenshot: imgAug1,
-  },
-  {
-    id: 'interactive-product-showcase',
-    icon: Shield,
-    color: '#0EA5E9',
-    bgColor: '#F0F9FF',
-    title: 'Interactive Product Showcase Improves Product Discovery and User Experience',
-    competitor: 'NinjaOne',
-    pageUrl: 'https://www.ninjaone.com/',
-    pageUrlDisplay: 'ninjaone.com',
-    summary:
-      'NinjaOne presents its solutions through an interactive, visual showcase with concise messaging, product screenshots, and customer testimonials on the homepage. This creates a more engaging and easier-to-scan experience than Splashtop\'s text-heavy product cards, helping visitors quickly understand each solution\'s value.',
-    opportunity:
-      'Replace static product cards with an interactive product showcase featuring product visuals, concise value propositions, and customer proof to improve product discovery, engagement, and conversion.',
-    bullets: [
-      'Interactive tab navigation spans 7 product areas: Endpoint Management, Mobile Device Management, Patch Management, Backup, Remote Control, Service Desk, and Integrations.',
-      '"Endpoint Management, Unified" — product screenshot paired with a concise value proposition and a "Learn more" CTA in a single scannable panel.',
-      'Vetcor customer proof: "15,000 endpoints managed" prominently displayed alongside the product visual.',
-      '"Before, I needed 10–15 different tools... NinjaOne makes life so much easier." — Ernie Turner, Director of IT, Vetcor. Direct customer validation co-located with product screenshots.',
-    ],
-    references: [
-      { label: 'NinjaOne – Homepage', url: 'https://www.ninjaone.com/' },
-    ],
-    screenshot: imgAug2,
-  },
-  {
-    id: 'product-page-structure-value-trust',
-    icon: Award,
-    color: '#059669',
-    bgColor: '#ECFDF5',
-    title: 'Product Page Structure Prioritizes Value and Trust Before Conversion',
-    competitor: 'NinjaOne',
-    pageUrl: 'https://www.ninjaone.com/patch-management/',
-    pageUrlDisplay: 'ninjaone.com/patch-management',
-    summary:
-      'NinjaOne structures its product page to first communicate key capabilities and customer outcomes, reinforcing them with customer testimonials, third-party recognitions, and review platform ratings before introducing pricing and plan selection. In contrast, Splashtop surfaces plan selection earlier in the page and relies primarily on customer testimonials as its primary trust element.',
-    opportunity:
-      'Restructure the product page to lead with product value, business outcomes, and diverse third-party validation before introducing pricing and plan selection. This can build visitor confidence earlier in the buying journey and create a stronger path to conversion.',
-    bullets: [
-      '720% three-year return on investment — quantified ROI positioned prominently before pricing to anchor value.',
-      '$1M annual efficiency benefits per 5,000 endpoints — specific financial outcome that resonates with enterprise buyers.',
-      '4-month payback on investment — short payback period reinforces fast time-to-value and reduces purchase risk.',
-      '"About 25 people are roughly 80% more effective using the platform." — customer quote co-located with outcome stats to validate the numbers with real-world proof.',
-    ],
-    references: [
-      {
-        label: 'NinjaOne – Patch Management',
-        url: 'https://www.ninjaone.com/patch-management/',
-      },
-    ],
-    screenshot: imgAug3,
->>>>>>> origin/main
   },
 ];
 

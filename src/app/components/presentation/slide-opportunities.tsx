@@ -26,13 +26,8 @@ const OPPS_COMPETITORS = [
   { id: 'gotomypc',    name: 'GoTo (MyPC)',  color: '#EF4444' },
 ];
 
-<<<<<<< HEAD
 // ─── Months: Oct 2025 → Aug 2026 (11 data-points) ───────────────────────────
 const OPPS_MONTHS = ['2025-07', '2025-08', '2025-09', '2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07', '2026-08', '2026-09'];
-=======
-// ─── Months: Oct 2025 → Jun 2026 (9 data-points) ───────────────────────────
-const OPPS_MONTHS = ['2025-10', '2025-11', '2025-12', '2026-01', '2026-02', '2026-03', '2026-04', '2026-05', '2026-06', '2026-07'];
->>>>>>> origin/main
 
 const formatMonth = (month: string) => {
   const [year, m] = month.split('-');
@@ -45,36 +40,20 @@ const getOppsOffset = (range: TimeRange): number => (range === '3m' ? 3 : 0);
 
 // ─── Organic Keywords (total, Oct 2025 – Jun 2026) ──────────────────────────
 const ORGANIC_KEYWORDS_OPPS: Record<string, number[]> = {
-<<<<<<< HEAD
   splashtop:   [65000, 54000, 58000, 58000, 58000, 59000, 64000, 68000, 59000, 50000, 46000, 37000, 36000, 35000, 42000],
   teamviewer:  [85000, 74000, 79000, 79000, 78000, 81000, 86000, 89000, 87000, 89000, 87000, 65000, 59000, 58000, 64000],
   anydesk:     [110000, 105000, 101000, 97000, 87000, 82000, 89000, 83000, 64000, 52000, 41000, 21000, 17000, 16000, 16000],
   beyondtrust: [32000, 34000, 43000, 42000, 39000, 29000, 29000, 31000, 28000, 25000, 23000, 20000, 19000, 19000, 20000],
   gotomypc:    [15000, 14000, 14000, 14000, 13000, 12000, 13000, 12000,  8000,  6000,  4000,  2000,  1000,  1000,  1000],
-=======
-  splashtop:   [58000, 58000, 59000, 64000, 68000, 59000, 50000, 46000, 37000, 36000],
-  teamviewer:  [79000, 78000, 81000, 86000, 89000, 87000, 89000, 87000, 65000, 59000],
-  anydesk:     [97000, 87000, 82000, 89000, 83000, 64000, 52000, 41000, 21000, 17000],
-  beyondtrust: [42000, 39000, 29000, 29000, 31000, 28000, 25000, 23000, 20000, 19000],
-  gotomypc:    [14000, 13000, 12000, 13000, 12000,  8000,  6000,  4000,  2000,  1000],
->>>>>>> origin/main
 };
 
 // ─── Page-1 Keywords (Oct 2025 – Jun 2026) ──────────────────────────────────
 const PAGE_ONE_KEYWORDS_OPPS: Record<string, number[]> = {
-<<<<<<< HEAD
   splashtop:   [5000, 5000, 6000, 6000, 6000, 7000, 8000, 8000, 9000, 9000, 9000, 8000, 8000, 8000, 9000],
   teamviewer:  [11000, 11000, 11000, 11000, 11000, 11000, 11000, 11000, 12000, 14000, 14000, 13000, 13000, 13000, 14000],
   anydesk:     [6000, 6000, 7000, 6000, 6000, 6000, 7000, 7000, 6000, 6000, 5000, 4000, 4000, 4000, 4000],
   beyondtrust: [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000],
   gotomypc:    [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000],
-=======
-  splashtop:   [6000, 6000, 7000, 8000, 8000, 9000, 9000, 9000, 8000, 8000],
-  teamviewer:  [11000, 11000, 11000, 11000, 11000, 12000, 14000, 14000, 13000, 13000],
-  anydesk:     [6000, 6000, 6000, 7000, 7000, 6000, 6000, 5000, 4000, 4000],
-  beyondtrust: [3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000, 3000],
-  gotomypc:    [1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000],
->>>>>>> origin/main
 };
 
 type TabType = 'organic' | 'page-one';
@@ -203,11 +182,7 @@ export function SlideOpportunities({ onNavigateHome }: SlideOpportunitiesProps) 
     const handleValueChange = getHandleValueChange();
 
     if (isEditing) {
-<<<<<<< HEAD
       const editMonths = ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'];
-=======
-      const editMonths = ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
->>>>>>> origin/main
       return (
         <div className="h-full overflow-auto p-2">
           <div className="space-y-3">
@@ -282,7 +257,6 @@ export function SlideOpportunities({ onNavigateHome }: SlideOpportunitiesProps) 
             icon={TrendingDown}
             type="error"
             title="Splashtop"
-<<<<<<< HEAD
             content={<>From Jul 2025 to Sep 2026, keywords declined <strong>65K → 42K (−35.4%)</strong>, recovering from Aug low of 35K (+20% MoM).</>}
           />
           <InsightCard
@@ -290,15 +264,6 @@ export function SlideOpportunities({ onNavigateHome }: SlideOpportunitiesProps) 
             type="error"
             title="Competitions"
             content={<>TeamViewer declined <strong>85K → 64K (−24.7%)</strong>, while AnyDesk dropped <strong>110K → 16K (−85.5%)</strong>.</>}
-=======
-            content={<>From Oct 2025 to Jul 2026, keywords held at <strong>~58K → ~36K (−37.9%)</strong>, peaking at <strong>68K</strong> in Feb before sustained decline.</>}
-          />
-          <InsightCard
-            icon={TrendingUp}
-            type="success"
-            title="Competitions"
-            content={<>TeamViewer declined <strong>79K → 59K (−25.3%)</strong>, while AnyDesk dropped significantly <strong>97K → 17K (−82.5%)</strong>.</>}
->>>>>>> origin/main
           />
         </InsightsSection>
       );
@@ -309,21 +274,13 @@ export function SlideOpportunities({ onNavigateHome }: SlideOpportunitiesProps) 
             icon={TrendingUp}
             type="success"
             title="Splashtop"
-<<<<<<< HEAD
             content={<>From Jul 2025 to Sep 2026, page-1 rankings grew <strong>~5K → ~9K (+80%)</strong>, strong top SERP visibility despite total keyword decline.</>}
-=======
-            content={<>From Oct 2025 to Jul 2026, page-1 rankings held at <strong>~6K → ~8K (+33%)</strong>, maintaining strong top SERP visibility despite total keyword decline.</>}
->>>>>>> origin/main
           />
           <InsightCard
             icon={TrendingUp}
             type="success"
             title="Competitions"
-<<<<<<< HEAD
             content={<>TeamViewer grew <strong>11K → 13K (+18.2%)</strong>, while AnyDesk declined <strong>6K → 4K (−33.3%)</strong>.</>}
-=======
-            content={<>TeamViewer held at <strong>11K → 13K (+18.2%)</strong>, while AnyDesk declined <strong>6K → 4K (−33.3%)</strong>.</>}
->>>>>>> origin/main
           />
         </InsightsSection>
       );
@@ -400,11 +357,7 @@ export function SlideOpportunities({ onNavigateHome }: SlideOpportunitiesProps) 
     <SlideContainer slideNumber={3} onNavigateHome={onNavigateHome}>
       <SlideHeader
         title="Keyword Performance"
-<<<<<<< HEAD
         subtitle="(Jul 2025 - Sep 2026)"
-=======
-        subtitle="(Oct 2025 - Jul 2026)"
->>>>>>> origin/main
       />
 
       {/* Tabs + time filter */}

@@ -6,7 +6,6 @@ import {
   SlideFooter,
 } from './design-system';
 
-<<<<<<< HEAD
 // Missing Keywords Data (Sep 2026)
 const missingKeywordsData = [
   { keyword: 'linux remote support tool', intent: 'Informational', volume: 90, kd: 25, cpc: 0, cd: 0, ft: 0, pa: 28, cp: 11, cisco: 25, cs: 6 },
@@ -36,51 +35,6 @@ const untappedKeywordsData = [
 // Multi-Competitor Comparison Data / Weak Keywords (Sep 2026)
 const multiCompetitorData = [
   { keyword: 'remote file transfer software', intent: 'Informational', volume: 40, kd: 18, ft: 28, pa: 6, cp: 3, cisco: 13, cs: 5 },
-=======
-// Missing Keywords Data (Jul 2026)
-const missingKeywordsData = [
-  { keyword: 'remote file transfer',    intent: 'Informational', volume: 140, kd: 20, cpc: 0, cd: 0, ft: 0, pa: 15, cp: 2,  cisco: 11, cs: 8 },
-  { keyword: 'linux remote assistance', intent: 'Informational', volume: 50,  kd: 26, cpc: 0, cd: 0, ft: 0, pa: 24, cp: 20, cisco: 7,  cs: 5 },
-];
-
-// Untapped Keywords Data (Jul 2026)
-const untappedKeywordsData = [
-  { keyword: 'remote desktop',                          intent: 'Informational, Navigational',  volume: 90500, kd: 79, cpc: 0, cd: 0, ft: 0, pa: 8,  cp: 19, cisco: 0,  cs: 0  },
-  { keyword: 'it support',                              intent: 'Informational',                volume: 40500, kd: 46, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 3,  cs: 0  },
-  { keyword: 'advanced file transfer',                  intent: 'Informational',                volume: 9900,  kd: 13, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 31, cisco: 57, cs: 0  },
-  { keyword: 'it support services',                     intent: 'Informational',                volume: 9900,  kd: 21, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 2,  cs: 0  },
-  { keyword: 'desktop remote access',                   intent: 'Informational',                volume: 8100,  kd: 82, cpc: 0, cd: 0, ft: 0, pa: 14, cp: 2,  cisco: 0,  cs: 0  },
-  { keyword: 'endpoint security',                       intent: 'Informational',                volume: 8100,  kd: 54, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 23, cs: 0  },
-  { keyword: 'it help desk',                            intent: 'Informational',                volume: 8100,  kd: 22, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 0,  cs: 4  },
-  { keyword: 'it support and services',                 intent: 'Commercial',                   volume: 5400,  kd: 32, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 3,  cs: 0  },
-  { keyword: 'identity access management',              intent: 'Informational',                volume: 3600,  kd: 48, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 33, cs: 0  },
-  { keyword: 'it help desk services',                   intent: 'Informational',                volume: 3600,  kd: 27, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 0,  cs: 3  },
-  { keyword: 'it helpdesk',                             intent: 'Informational',                volume: 3600,  kd: 30, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 22, cs: 0  },
-  { keyword: 'remote access desktop',                   intent: 'Informational',                volume: 3600,  kd: 86, cpc: 0, cd: 0, ft: 0, pa: 11, cp: 3,  cisco: 0,  cs: 0  },
-  { keyword: 'endpoint security solutions',             intent: 'Commercial, Informational',    volume: 2900,  kd: 44, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 43, cs: 0  },
-  { keyword: 'free remote desktop software',            intent: 'Informational',                volume: 2900,  kd: 44, cpc: 0, cd: 0, ft: 0, pa: 1,  cp: 0,  cisco: 0,  cs: 0  },
-  { keyword: 'free remote access software',             intent: 'Informational',                volume: 2400,  kd: 47, cpc: 0, cd: 0, ft: 0, pa: 1,  cp: 6,  cisco: 0,  cs: 13 },
-  { keyword: 'free remote desktop',                     intent: 'Informational',                volume: 2400,  kd: 56, cpc: 0, cd: 0, ft: 0, pa: 1,  cp: 9,  cisco: 0,  cs: 0  },
-  { keyword: 'identity and access management solutions',intent: 'Informational',                volume: 2400,  kd: 48, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 35, cs: 0  },
-  { keyword: 'it helpdesk services',                    intent: 'Commercial',                   volume: 2400,  kd: 19, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 0,  cs: 4  },
-  { keyword: 'it services and support',                 intent: 'Commercial',                   volume: 2400,  kd: 37, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 4,  cs: 0  },
-  { keyword: 'mdm solutions',                           intent: 'Informational',                volume: 2400,  kd: 42, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 47, cs: 0  },
-  { keyword: 'remote desktop connection software',      intent: 'Informational',                volume: 2400,  kd: 51, cpc: 0, cd: 0, ft: 0, pa: 1,  cp: 3,  cisco: 0,  cs: 0  },
-  { keyword: 'remote login',                            intent: 'Transactional',                volume: 2400,  kd: 74, cpc: 0, cd: 0, ft: 0, pa: 4,  cp: 0,  cisco: 0,  cs: 20 },
-  { keyword: 'remote monitoring',                       intent: 'Informational',                volume: 2400,  kd: 62, cpc: 0, cd: 0, ft: 0, pa: 6,  cp: 0,  cisco: 0,  cs: 0  },
-  { keyword: 'digital employee experience',             intent: 'Informational',                volume: 1900,  kd: 27, cpc: 0, cd: 0, ft: 0, pa: 31, cp: 0,  cisco: 0,  cs: 0  },
-  { keyword: 'remote access to computer',               intent: 'Informational',                volume: 1900,  kd: 57, cpc: 0, cd: 0, ft: 0, pa: 3,  cp: 5,  cisco: 0,  cs: 0  },
-  { keyword: 'unified endpoint management',             intent: 'Informational',                volume: 1900,  kd: 28, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 0,  cs: 36 },
-  { keyword: 'what is endpoint security',               intent: 'Informational',                volume: 1900,  kd: 36, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 22, cs: 0  },
-  { keyword: 'what is remote desktop connection',       intent: 'Informational',                volume: 1900,  kd: 49, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 10, cisco: 0,  cs: 0  },
-  { keyword: 'zero trust solutions',                    intent: 'Commercial, Informational',    volume: 1900,  kd: 52, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 13, cs: 0  },
-  { keyword: 'ai security solutions',                   intent: 'Informational',                volume: 1600,  kd: 51, cpc: 0, cd: 0, ft: 0, pa: 0,  cp: 0,  cisco: 1,  cs: 0  },
-];
-
-// Multi-Competitor Comparison Data / Weak Keywords (Jul 2026)
-const multiCompetitorData = [
-  { keyword: 'remote file transfer software', intent: 'Informational', volume: 50, kd: 21, ft: 24, pa: 15, cp: 1, cisco: 21, cs: 4 },
->>>>>>> origin/main
 ];
 
 export function SlideKeywordGap({ onNavigateHome }: { onNavigateHome?: () => void }) {
